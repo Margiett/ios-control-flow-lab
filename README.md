@@ -32,7 +32,8 @@ print("D")
 - B
 - C
 - D
-
+The Answer is A, C, D 
+==========================================================================
 ***
 ## Question 2
 
@@ -55,7 +56,8 @@ switch appInfo {
 - Thanks for looking at myCoolApp!
 - I'm not quite sure what you are looking at
 - It will give a compile-time error
-
+The Answer is myCoolApp hasn't released yet
+==========================================================================
 ***
 ## Question 3
 
@@ -79,7 +81,8 @@ default:
 - B
 - C
 - D
-
+The answer is D
+==========================================================================
 ***
 ## Question 4
 
@@ -104,6 +107,8 @@ case "snickers":
 - No print statement right outside the switch statement
 
 ***
+The Answer is :  No default case in the switch statement                                                                       ==========================================================================
+
 ## Question 5
 
 Given the current weather conditions (rain, sunny, snow), use a switch statement to print an appropriate message to the user
@@ -159,6 +164,7 @@ else {
  print("You lose!")
 }
 ```
+let game 
 ***
 
 ## Question 9
@@ -185,6 +191,19 @@ Output:
 Error
 
 ```
+The Answer: 
+let numberOfSides = 6
+
+switch numberOfSides {
+case 4:
+    print("Square")
+case 3:
+    print("triangle")
+case 8:
+    print("Octagon")
+default:
+    print("error")
+}
 ***
 
 ## Question 10
@@ -200,6 +219,22 @@ Numeric Score 	Letter Grade
 65 - 69 	D
 Below 65 	F
 ```
+The Answer: 
+let numberGrade = 61
+
+switch numberGrade {
+case 100:
+    print("A+")
+case 90...99:
+    print("A")
+case 80...89:
+    print("B")
+case 70...79:
+    print("C")
+case 65...69:
+    print("D")
+default:
+    print("F")
 ***
 
 ## Question 11
@@ -216,6 +251,19 @@ if firstName == "Peter" {
 }
 let fullName = firstName + " " + lastName
 ```
+The Answer is:
+let firstName = "Peter"
+var lastName:String = " "
+
+if firstName == "Peter" {
+ lastName = "Gabriel"
+} else if firstName == "Phil" {
+lastName = "Collins"
+}
+let fullName = firstName + " " + lastName
+
+print(fullName)
+
 ***
 
 ## Question 12
@@ -226,6 +274,23 @@ Write an if statement that prints out what decade of life someone is in (e.g "Yo
 let nameAndBirthYear: (String, Int)
 
 ```
+The Answer:
+let BirthYear = (1992,"Jasmin")
+
+switch BirthYear.0 {
+case 1990...1999:
+    print("You are in your twenties \(BirthYear.1)")
+case 1980...1989:
+ print("You are in your thirties")
+default:
+ print("You are old my Friend")
+}
+The Answer for number 12 if statement:
+
+let nameAndBirthYear = (1992, "Jasmin")
+if 1990...1999 ~= nameAndBirthYear.0{
+print("You are in your twenties Jasmin")
+}
 ***
 
 
@@ -250,13 +315,13 @@ default:
 ```
 What happens when you change number to:
 
--a. 365?
+-a. 365?  THE ANSWER: Days in Years
 
--b. 1024?
+-b. 1024? THE ANSWER IS BYTES IN A KILOBYTE
 
--c. 65?
+-c. 65? THE ANSWER IS: SOME UNINTERESTING NUMBER 
 
-What happens when you remove the default clause?
+What happens when you remove the default clause? THE ANSWER IS: Error message
 
 ***
 

@@ -148,7 +148,19 @@ if temperatureInFahrenheit <= 40 {
 
 //Re-written statement here
 
+
 ```
+The Answer:  
+let temperatureInFahrenheit = 8
+
+switch temperatureInFahrenheit {
+case 1...40:
+    print("it's cold out")
+case 85...100:
+    print("it's really warm")
+default:
+    print("Weather is moderate")
+}
 
 ***
 
@@ -164,7 +176,16 @@ else {
  print("You lose!")
 }
 ```
-let game 
+let game = "paper"
+var handGame:String = " "
+
+if game == "rock"{
+handGame = "scissors"
+print("You Win !")
+} else if game == "paper"{
+handGame = "scissors"
+print("You lose !")
+}
 ***
 
 ## Question 9
